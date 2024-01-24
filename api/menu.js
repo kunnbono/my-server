@@ -1,6 +1,6 @@
 
 function generateRandomString(length) {
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 let randomString = '';
 
 for (let i = 0; i < length; i++) {
@@ -16,7 +16,12 @@ function genrateRandomNumber (depth) {
     return Math.floor(Math.random() * 6) + 2;
 };
 
-export const menuInfo = () => {
+export const menuInfo = (stop_fake_errors) => {
+
+    if(!stop_fake_errors) {
+        const throwFakeError = Math.random() < 0.5 ? 0 : 1;
+        if (throwFakeError) throw new Error('Something went wrong :(')
+    }
 
     const rowWithRandomNames = (depth) => {
         const hasChildren = Math.random() < 0.5 ? 0 : 1;
