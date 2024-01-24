@@ -12,12 +12,11 @@ return randomString;
 }
 
 function genrateRandomNumber (depth) {
-    if (depth === 0) Math.floor(Math.random() * (5 - 3 + 1)) + 3;
+    if (depth === 0) return 2;
     return Math.floor(Math.random() * 6) + 2;
 };
 
 export const menuInfo = () => {
-
 
     const rowWithRandomNames = (depth) => {
         const hasChildren = Math.random() < 0.5 ? 0 : 1;
@@ -33,97 +32,10 @@ export const menuInfo = () => {
         });
     }
 
-    const menuStructure = rowWithRandomNames(0)
+    const baseMenuStructure = rowWithRandomNames(0)
+
+    const menuStructure = [{displayName: "home", url: "/"}, {displayName: "team", url: "/team"}, ...baseMenuStructure]
 
     return menuStructure
 
 }
-
-// export const menuInfo = () => {
-//     const data = [
-//         {
-//             "displayName": "home",
-//             "url": "",
-//             "link": "/"
-//         },
-//         {
-//             "displayName": "team",
-//             "url": "",
-//             "link": "/team"
-//         },
-//         {
-//         "displayName": "fisrt father",
-//         "url": "",
-//         "link": "/falseURL",
-//         "children": [
-//             {
-//                 "displayName": "fisrt child",
-//                 "url": "",
-//                 "link": "/falseURL",
-//                 "children": [
-//                     {
-//                         "displayName": "fisrt grand child",
-//                         "url": "",
-//                         "link": "/falseURL"
-//                         }
-//                 ]
-//             },
-//             {
-//                 "displayName": "sec child",
-//                 "url": "",
-//                 "link": "/falseURL"
-//             }
-//         ]
-//         },
-//         {
-//             "displayName": "sec father",
-//             "url": "",
-//             "link": "/falseURL",
-//             "children": []
-//         },  
-//         {
-//             "displayName": "thi father",
-//             "url": "",
-//             "link": "/falseURL",
-//             "children": []
-//         },
-//         {
-//             "displayName": "fourth father",
-//             "url": "",
-//             "link": "/falseURL",
-//             "children": [
-//                 {
-//                     "displayName": "fisrt child",
-//                     "url": "",
-//                     "link": "/falseURL",
-//                     "children": [
-//                         {
-//                             "displayName": "fisrt grand child",
-//                             "url": "",
-//                             "link": "/falseURL",
-//                             "children": [
-//                                 {
-//                                     "displayName": "fisrt grand grand child",
-//                                     "url": "",
-//                                     "link": "/falseURL"
-//                                 }
-//                             ]
-//                             }
-//                     ]
-//                 },
-//                 {
-//                     "displayName": "sec child",
-//                     "url": "",
-//                     "link": "/falseURL"
-//                 }
-//             ]
-//         },
-//         {
-//             "displayName": "fifth father",
-//             "url": "",
-//             "link": "/falseURL",
-//             "children": []
-//         }
-//     ];
-//     return data
-// }
