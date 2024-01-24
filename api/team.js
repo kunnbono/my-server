@@ -5,12 +5,12 @@ export const teamInfo = () => {
         about: "I love to love"
     }
     const Yoav = {
-        name: 'Yoav',
+        name: 'Yoav Gleit',
         image: 'https://media.gcflearnfree.org/ctassets/topics/246/share_flower_fullsize.jpg',
         about: "Yoav"
     }
     const Ariel = {
-        name: 'Ariel',
+        name: 'Ariel Zissu',
         image: 'https://media.gcflearnfree.org/ctassets/topics/246/share_flower_fullsize.jpg',
         about: "Ariel"
     }
