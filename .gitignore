@@ -1,0 +1,38 @@
+.history
+.DS_Store
+
+*.env*
+!.envignore
+!.env.example
+
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+node_modules
+
+.npmrc
+.nvmrc
+
+# Webstorm
+.idea
+
+# NextJS
+.next
+
+# Test coverage
+coverage
+
+# Lerna
+lerna-debug.log
+
+# Distributions
+packages/**/dist
+packages/spo/server/**/*.js
+
+
+testapp
