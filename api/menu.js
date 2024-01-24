@@ -12,7 +12,7 @@ return randomString;
 }
 
 function genrateRandomNumber (depth) {
-    if (depth === 0) return 2;
+    if (depth === 0) return 4;
     return Math.floor(Math.random() * 6) + 2;
 };
 
