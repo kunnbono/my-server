@@ -1,9 +1,9 @@
-import express from 'express';
-import { routeWrapper } from './routeWrapper.js';
-import { getMenuInfo } from '../../controllers/menu/index.js';
+import express from "express";
+import { routeWrapper } from "./routeWrapper.js";
+import { getMenuInfo } from "../../controllers/menu/index.js";
 
 const router = express.Router();
 
-router.get('/info', routeWrapper(getMenuInfo));
+router.get("/structure", routeWrapper(getMenuInfo));
 
 export default router;
