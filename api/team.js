@@ -11,8 +11,10 @@ export const teamInfo = () => {
   const Yoav = {
     name: "Yoav Gleit",
     image:
-      "https://media.gcflearnfree.org/ctassets/topics/246/share_flower_fullsize.jpg",
-    about: "Yoav",
+      "https://res.cloudinary.com/upstay/image/upload/v1706435872/moty_home_assignment/dhrjwdqa5usd1ecwegzq.png",
+    about: `Hi, 
+    I'm Yoav Gleit, a 29-year-old full-stack developer with 3 years of experience, deeply passionate about soccer, video gaming, and the Star Wars universe. 
+    Merging my technical expertise with my love for dynamic and engaging hobbies, I bring creativity and enthusiasm to every project I tackle.`,
   };
   const Ariel = {
     name: "Ariel Zissu",
